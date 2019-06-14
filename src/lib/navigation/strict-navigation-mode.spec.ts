@@ -21,7 +21,7 @@ import {WizardStep} from '../util/wizard-step.interface';
   `
 })
 class WizardTestComponent {
-  @ViewChild(WizardComponent)
+  @ViewChild(WizardComponent, {static: false})
   public wizard: WizardComponent;
 }
 
